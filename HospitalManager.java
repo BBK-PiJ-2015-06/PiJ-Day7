@@ -30,7 +30,12 @@ public class HospitalManager {
 				patientListStart.addPatient(nextPatient);
 			}
 		}
-		System.out.println (" ");
+		System.out.println(" ");
+		patientListStart.printList();
+		System.out.print("Please type the name of the patient you want to remove: ");
+		String s = System.console().readLine();
+		patientListStart.deletePatient(s);
+		System.out.println(" ");
 		patientListStart.printList();
 	}
 }
