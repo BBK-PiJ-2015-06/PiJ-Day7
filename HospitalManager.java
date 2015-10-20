@@ -30,12 +30,20 @@ public class HospitalManager {
 				patientListStart.addPatient(nextPatient);
 			}
 		}
+		
+		//Testing for printList() method
 		System.out.println(" ");
 		patientListStart.printList();
+		
+		//Testing for deletePatient() method
 		System.out.print("Please type the name of the patient you want to remove: ");
 		String s = System.console().readLine();
 		patientListStart.deletePatient(s);
 		System.out.println(" ");
 		patientListStart.printList();
+		
+		//Testing for getLength() method
+		int listLength = patientListStart.getLength(patientListStart);
+		System.out.println("Number of elements: " + listLength);
 	}
 }

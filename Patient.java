@@ -43,4 +43,14 @@ public class Patient {
 			this.nextPatient.deletePatient(name);
 		}
 	}
+	
+	public int getLength(Patient patient) {
+		int count = 1;
+		do {
+			patient = patient.nextPatient;
+			count++;
+		} while(patient.nextPatient != null);
+		return count;
+	}
+	
 }
