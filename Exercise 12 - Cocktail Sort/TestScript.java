@@ -66,15 +66,15 @@ public class TestScript {
 		list.add(new Node(53));
 		
 		double start = System.currentTimeMillis();
-		LinkedList sortedList = ListUtilities.bubbleSort(list);
+		LinkedList sortedList2 = ListUtilities.cocktailSort(list);
 		double finish = System.currentTimeMillis();
-		sortedList.printList();
+		sortedList2.printList();
 		System.out.println("Time taken: " + (finish - start) + " milliseconds");
 		
 		start = System.currentTimeMillis();
-		LinkedList sortedList2 = ListUtilities.cocktailSort(list);
+		LinkedList sortedList = ListUtilities.bubbleSort(list);
 		finish = System.currentTimeMillis();
-		sortedList2.printList();
+		sortedList.printList();
 		System.out.println("Time taken: " + (finish - start) + " milliseconds");
 	}
 	
